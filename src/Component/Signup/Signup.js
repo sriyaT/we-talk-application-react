@@ -86,14 +86,14 @@ class Signup extends React.Component{
             return;
         }
 
-        firebase
+            firebase
             .auth()
             .createUserWithEmailAndPassword(this.state.email, this.state.password)
             .then(authRes => {
                 const userObj = {
                     email:  authRes.user.email
                 };
-            firebase
+                firebase
                 .firestore()
                 .collection('users')
                 .doc(this.state.email)
@@ -101,12 +101,10 @@ class Signup extends React.Component{
                 .then(() => {
                     this.props.history.push('/dashboard')
                 }, dbError => {
-                    console.log(dbError);
                     this.setState({signupError: 'Failed to add user !'})
                 })
 
             },authError => {
-                console.log(authError);
                 this.setState({signupError: 'Failed to add user !'})
             })
     }  

@@ -37,7 +37,7 @@ class ChatList extends React.Component{
                                     <ListItemAvatar>
                                         <Avatar alt='Remy sharp'>
                                             {
-                                                _chat.users.filter(_user =>  _user !== this.props.userEmail)[0].split('')[0 ]
+                                                _chat.users.filter(_user =>  _user !== this.props.userEmail)[0].split('')[0]
                                             }
                                         </Avatar>
                                     </ListItemAvatar>
