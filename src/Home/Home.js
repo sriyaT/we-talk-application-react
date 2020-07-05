@@ -5,7 +5,7 @@ import style from './style';
 class Home extends React.Component{
     render(){
         return(
-            <div>hey it's home page!</div>
+            <div onClick={() => this.props.history.push('/login')}>Go to login page!</div> 
         )
     }
 }
