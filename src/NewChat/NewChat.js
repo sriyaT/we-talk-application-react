@@ -42,6 +42,8 @@ userTyping = (type, e) =>{
         case 'message':
             this.setState({message: e.target.value});
             break;
+        default:
+            break;    
     }
 }
 

@@ -11,7 +11,6 @@ import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import NotificationImportant from '@material-ui/icons/NotificationImportant';
-import { Paper } from '@material-ui/core';
 
 class ChatList extends React.Component{
     render(){
